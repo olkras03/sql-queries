@@ -1,6 +1,6 @@
-## SQL Tutorial
+# SQL Tutorial
 
-# SELECT from Nobel Tutorial
+## SELECT from Nobel Tutorial
 
 Practicing simple SQL queries on a single table.
 
@@ -71,3 +71,17 @@ WHERE yr=1980 AND
 SELECT *
 FROM nobel
 WHERE (yr < 1910 AND subject = 'Medicine') or ( yr >= 2004 AND subject = 'Literature')
+
+11. Find all details of the prize won by PETER GRÜNBERG
+
+SELECT *
+FROM nobel
+WHERE winner LIKE 'PETER GRÜNBERG'
+
+12. Find all details of the prize won by EUGENE O'NEILL
+
+SELECT *
+FROM nobel
+WHERE winner LIKE 'EUGENE O\'NEILL'
+
+13. List the winners, year and subject where the winner starts with Sir. Show the the most recent first, then by name order.
